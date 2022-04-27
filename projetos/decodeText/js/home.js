@@ -10,19 +10,35 @@ areaResultadoOK.style.display = 'none';
 resultadoVazio.style.display = 'flex';
 
 function criptografar(){
-    var input = inputEntrada.value;
+    var input = inputEntrada.value.toLowerCase();
+    var array = [];
+    array = input.split(' ');
 
-    var cripto = input.replace('e','enter').replace('i','imes').replace('a', 'ai').replace('o', 'ober').replace('u', 'ufat')
-    areaResultado.textContent = cripto;
+    var textCripto = '';
+
+    for(var i = 0; i < array.length; i++){
+        cripto = array[i].replace('e','enter').replace('i','imes').replace('a', 'ai').replace('o', 'ober').replace('u', 'ufat')
+        textCripto = textCripto + ' ' + cripto
+    }
+
+    areaResultado.textContent = textCripto;
     areaResultadoOK.style.display = 'flex';
     resultadoVazio.style.display = 'none';
 }
 
 function descriptografar(){
-    var input = inputEntrada.value;
+    var input = inputEntrada.value.toLowerCase();
+    var array = [];
+    array = input.split(' ');
 
-    var descripto = input.replace('enter', 'e').replace('imes', 'i').replace('ai', 'a').replace('ober', 'o').replace('ufat', 'u')
-    areaResultado.textContent = descripto;
+    var textDescripto = '';
+
+    for(var i = 0; i < array.length; i++){
+        descripto = array[i].replace('enter', 'e').replace('imes', 'i').replace('ai', 'a').replace('ober', 'o').replace('ufat', 'u')
+        textDescripto = textDescripto + ' ' + descripto
+    }
+
+    areaResultado.textContent = textDescripto;
     areaResultadoOK.style.display = 'flex';
     resultadoVazio.style.display = 'none';
 }

@@ -106,10 +106,13 @@ main{
     border: 0;
     font: 18px sans-serif;
     color: #fff;
+    transition: 0.5s all;
 }
 
 .btn-copiar:hover{
     cursor: pointer;
+    width: 72%;
+    height: 55px;
 }
 
 .tit-resultado{
@@ -153,10 +156,13 @@ main{
     border: 0;
     font: 18px sans-serif;
     color: #fff;
+    transition: 0.5s all;
 }
 
 #btn-cripto:hover{
     cursor: pointer;
+    width: 215px;
+    height: 60px;
 }
 
 #btn-descripto{
@@ -169,10 +175,13 @@ main{
     font: 18px sans-serif;
     color: #0A3871;
     border-color: #0A3871;
+    transition: 0.5s all;
 }
 
 #btn-descripto:hover{
     cursor: pointer;
+    width: 215px;
+    height: 60px;
 }
 
 footer{
