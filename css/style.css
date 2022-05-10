@@ -2,7 +2,7 @@ main{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 850px;
+    height: 1300px;
     background: linear-gradient(#993399, #003261);
     align-items: center;
 }
@@ -72,6 +72,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 5px;
 }
 
 .icon-linkedin{
@@ -135,6 +136,7 @@ main{
 .avatar-projeto{
     width: 115px;
     height: 70%;
+    border-radius: 10px;
 }
 
 .tit-projeto{
@@ -144,10 +146,19 @@ main{
 }
 
 .descricao-projeto{
-    font-size: 20px;
+    font-size: 18px;
     font-family: sans-serif;
     color: #606060;
     text-align: justify;
+    margin-top: 5px
+}
+
+.tags{
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #993399;
+    margin: 5px 0;
+    font-size: 14px;
 }
 
 .area-btn-card{
@@ -209,7 +220,7 @@ main{
 
 @media screen and (max-width: 480px){
     main{
-        height: 850px;
+        height: 2600px;
     }
 
     .area-top{
@@ -269,16 +280,16 @@ main{
     }
 
     .card-projeto img{
-        width: 90px;
-        height: 90px;
+        width: 70px;
+        height: 70px;
     }
 
     .card-projeto h3{
-        font-size: 27px;
+        font-size: 20px;
     }
 
     .card-projeto p{
-        font-size: 20px;
+        font-size: 15px;
     }
 
     .area-btn-card{
