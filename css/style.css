@@ -161,6 +161,34 @@ main{
     color: var(--text-color);
 }
 
+@media screen and (max-width: 769px) {
+    main{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .profile-area-container{
+        width: 93%;
+    }
+
+    .banner-projetos{
+        width: 250px;
+        height: 200px;
+    }
+
+    .projects-area-container{
+        width: 93%;
+    }
+
+    .card-tecnologia{
+        padding: 5px 10px;
+    }
+
+    .btn-actions-card-projects{
+        padding: 5px 10px;
+    }
+}
+
 @media screen and (max-width: 426px) {
     main{
         flex-direction: column;
