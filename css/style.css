@@ -160,3 +160,34 @@ main{
     align-items: center;
     color: var(--text-color);
 }
+
+@media screen and (max-width: 426px) {
+    main{
+        flex-direction: column;
+    }
+
+    .profile-area-container{
+        width: 100%;
+    }
+
+    .content-card-projetos{
+        flex-direction: column;
+    }
+
+    .banner-projetos{
+        width: 100%;
+        height: 200px;
+    }
+
+    .projects-area-container{
+        width: 100%;
+    }
+
+    .card-tecnologia{
+        padding: 5px 10px;
+    }
+
+    .btn-actions-card-projects{
+        padding: 5px 10px;
+    }
+}
